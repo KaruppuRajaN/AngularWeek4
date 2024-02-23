@@ -1,0 +1,17 @@
+<form class="example-form">
+    <div style="margin-top: 20px; width:300px;margin-left: 500px;">
+    <mat-form-field class="example-full-width" style="width:300px;">
+      <input matInput placeholder="Enter your First Name" name="firstname" [(ngModel)]="investor.firstname">
+    </mat-form-field><br>
+    <mat-form-field class="example-full-width" style="width:300px;">
+        <input matInput placeholder="Enter your Last Name" name="lastname" [(ngModel)]="investor.lastname">
+      </mat-form-field><br>
+      <mat-form-field class="example-half-width" style="width:300px;">
+        <input matInput placeholder="Enter your State Name" name="state" [(ngModel)]="investor.state">
+      </mat-form-field><br>
+      <mat-form-field class="example-full-width" style="width:300px;">
+        <input matInput placeholder="Enter Amount Balance" name="balance" [(ngModel)]="investor.availableAmount">
+      </mat-form-field><br>
+      <button  style="background-color: #008000;width: 100%;" mat-raised-button color="primary" (click)="onSubmit()">Add Investor Details</button>
+    </div>
+    </form>

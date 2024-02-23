@@ -1,0 +1,27 @@
+<div style="margin-left: 400px;margin-top: 80px;"><h2>Transactions List</h2>
+    <table border="5" style="padding: 5px;">
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>Timestamp</th>
+            <th>Status</th>
+            <th>Spent Type</th>
+            <th>Spent Amount</th>
+            <th>Investor ID</th>
+            <th>Instrument Type</th>
+        </tr>
+        </thead>
+        <tbody>
+    <tr *ngFor="let transaction of transactions">
+        <td>{{transaction.tid}}</td>
+        <td>{{transaction.timestamp}}</td>
+        <td>{{transaction.status}}</td>
+        <td>{{transaction.spentType}}</td>
+        <td>{{transaction.spentAmount}}</td>
+        <td>{{transaction.invID}}</td>
+        <td>{{transaction.instrumentType}}</td>
+        <!-- <td><button mat-raised-button color="primary" (click)="onSubmit(investor)">Update</button></td> -->
+    </tr>
+    </tbody>
+    </table>
+    </div>

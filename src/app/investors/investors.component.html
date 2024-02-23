@@ -1,0 +1,23 @@
+<div style="margin-left: 500px;margin-top: 80px;"><h2>Investors List</h2>
+<table border="5" style="padding: 5px;">
+    <thead>
+        <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>State</th>
+        <th>Available Amount</th>
+    </tr>
+    </thead>
+    <tbody>
+<tr *ngFor="let investor of investors">
+    <td>{{investor.id}}</td>
+    <td>{{investor.firstname}}</td>
+    <td>{{investor.lastname}}</td>
+    <td>{{investor.state}}</td>
+    <td>{{investor.availableAmount}}</td>
+    <!-- <td><button mat-raised-button color="primary" (click)="onSubmit(investor)">Update</button></td> -->
+</tr>
+</tbody>
+</table>
+</div>

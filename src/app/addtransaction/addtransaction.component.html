@@ -1,0 +1,23 @@
+<form class="example-form">
+    <div style="margin-top: 20px; width:300px;margin-left: 500px;">
+    <mat-form-field class="example-full-width" style="width:300px;">
+      <input matInput placeholder="Enter TimeStamp" name="timestamp" [(ngModel)]="transaction.timestamp">
+    </mat-form-field><br>
+    <mat-form-field class="example-full-width" style="width:300px;">
+        <input matInput placeholder="Enter Status" name="status" [(ngModel)]="transaction.status">
+      </mat-form-field><br>
+      <mat-form-field class="example-half-width" style="width:300px;">
+        <input matInput placeholder="Enter Spent Type" name="spentType" [(ngModel)]="transaction.spentType">
+      </mat-form-field><br>
+      <mat-form-field class="example-full-width" style="width:300px;">
+        <input matInput placeholder="Enter Transaction Amount" name="amount" [(ngModel)]="transaction.spentAmount">
+      </mat-form-field><br>
+      <mat-form-field class="example-full-width" style="width:300px;">
+        <input matInput placeholder="Enter Investor ID" name="amount" [(ngModel)]="transaction.invID">
+      </mat-form-field><br>
+      <mat-form-field class="example-full-width" style="width:300px;">
+        <input matInput placeholder="Enter Instrument Type" name="amount" [(ngModel)]="transaction.instrumentType">
+      </mat-form-field><br>
+      <button  style="background-color: #008000;width: 100%;" mat-raised-button color="primary" (click)="onSubmit()">Add Transaction Details</button>
+    </div>
+    </form>
